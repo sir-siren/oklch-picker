@@ -1,20 +1,20 @@
 import type { WritableAtom } from 'nanostores'
 
 import {
-  show3d,
-  showCharts,
-  showP3,
-  showRec2020
+    show3d,
+    showCharts,
+    showP3,
+    showRec2020
 } from '../../stores/settings.ts'
 import { getCheckbox, onChange } from '../checkbox/index.ts'
 
 function init(store: WritableAtom<boolean>, checkbox: HTMLInputElement): void {
-  store.subscribe(show => {
-    checkbox.checked = show
-  })
-  onChange(checkbox, checked => {
-    store.set(checked)
-  })
+    store.subscribe(show => {
+        checkbox.checked = show
+    })
+    onChange(checkbox, checked => {
+        store.set(checked)
+    })
 }
 
 init(showCharts, getCheckbox('charts')!)

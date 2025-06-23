@@ -4,16 +4,16 @@ import { buildForCSS } from '../lib/colors.ts'
 import { current } from './current.ts'
 
 export let accent = computed(current, value => {
-  let { h } = value
-  if (COLOR_FN === 'oklch') {
-    return {
-      main: buildForCSS(0.57, 0.18, h),
-      surface: buildForCSS(0.7, 0.17, h, 0.2)
+    let { h } = value
+    if (COLOR_FN === 'oklch') {
+        return {
+            main: buildForCSS(0.57, 0.18, h),
+            surface: buildForCSS(0.7, 0.17, h, 0.2)
+        }
+    } else {
+        return {
+            main: buildForCSS(47, 58, h),
+            surface: buildForCSS(63, 55, h, 0.2)
+        }
     }
-  } else {
-    return {
-      main: buildForCSS(47, 58, h),
-      surface: buildForCSS(63, 55, h, 0.2)
-    }
-  }
 })

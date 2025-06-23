@@ -1,9 +1,16 @@
 {
-  "extends": "@logux/stylelint-config",
-  "ignoreFiles": ["dist/**/*"],
-  "rules": {
-    "function-disallowed-list": ["rgb", "rgba", "hsl", "hsla"],
-    "alpha-value-notation": "percentage",
-    "color-named": "never"
-  }
+    "extends": "@logux/stylelint-config",
+    "ignoreFiles": [
+        "dist/**/*"
+    ],
+    "rules": {
+        "function-disallowed-list": [
+            "rgb",
+            "rgba",
+            "hsl",
+            "hsla"
+        ],
+        "alpha-value-notation": "percentage",
+        "color-named": "never"
+    }
 }

@@ -17,28 +17,28 @@ pre,
 input,
 button,
 fieldset {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 /* Remove unexpacted flex behaviour */
 * {
-  flex-shrink: 0;
+    flex-shrink: 0;
 }
 
 /* Use screen height */
 
 html {
-  height: 100%;
+    height: 100%;
 }
 
 /* Prevent font size change after orientation changes in iOS */
 
 body {
-  min-height: 100%;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    min-height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* Global font in controls */
@@ -47,13 +47,13 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+    font: inherit;
 }
 
 /* Fix clickable styling in iOS and Safari */
 
 button {
-  -webkit-appearance: button;
+    -webkit-appearance: button;
 }
 
 /* Pointer cursor for all interactive elements */
@@ -61,18 +61,18 @@ button {
 a,
 select:not(:disabled),
 button:not(:disabled) {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 /* Remove border in Firefox */
 
 ::-moz-focus-inner {
-  padding: 0;
-  border-style: none;
+    padding: 0;
+    border-style: none;
 }
 
 /* Fix default display */
 
 img {
-  display: block;
+    display: block;
 }
